@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e  # Exit immediately if a command exits with a non-zero status.
+set -x  # All executed commands are printed to the terminal
+
+wget -O /tmp/wstunnel https://github.com/erebe/wstunnel/releases/download/v5.0/wstunnel-linux-x64
+chmod +x /tmp/wstunnel
+mv /tmp/wstunnel /sbin
+
+rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /root/.aptitude /root/.wget-hsts
+
