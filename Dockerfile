@@ -1,5 +1,8 @@
-FROM ghcr.io/fernandoenzo/debian:12
+FROM ghcr.io/fernandoenzo/debian:testing
 
-COPY scripts/basics /tmp
-RUN bash /tmp/basics
+COPY contents/ /tmp/contents/
+RUN bash /tmp/contents/scripts/basics
+
+ENV TOR_PT_MANAGED_TRANSPORT_VER 1
+ENV TOR_PT_STATE_LOCATION /tor/
 

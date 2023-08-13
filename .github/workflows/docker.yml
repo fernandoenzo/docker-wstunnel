@@ -1,4 +1,4 @@
-name: Docker WsTunnel
+name: Docker Obfsproxy Server
 
 on:
   workflow_dispatch:
@@ -28,4 +28,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ env.REGISTRY }}/${{ github.actor }}/wstunnel:latest
+          tags: ${{ env.REGISTRY }}/${{ github.actor }}/obfsproxy-server:latest

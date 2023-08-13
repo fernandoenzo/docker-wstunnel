@@ -1,0 +1,10 @@
+# You can change the iat-mode if needed to 1 or 2
+# See https://computerscot.github.io/tor-obfs4-bridge-iat-mode-2.html
+IAT_MODE=0
+
+# Obfs4proxy server listening address and port
+LISTEN_ADDRESS=0.0.0.0:80
+
+# Redirect address and port
+REDIRECT_TO=127.0.0.1:1194
+
