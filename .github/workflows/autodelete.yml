@@ -16,7 +16,7 @@ jobs:
         with:
           account-type: personal
           untagged-only: true
-          image-names: wstunnel
+          image-names: obfsproxy-server
           keep-at-least: 1
           cut-off: One second ago UTC
           token: ${{ secrets.DELETE_PACKAGES }}
